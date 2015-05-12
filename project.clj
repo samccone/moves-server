@@ -3,6 +3,7 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :profiles {:uberjar {:aot :all}}
   :plugins [[lein-ring "0.8.11"]
             [lein-environ "1.0.0"]]
   :ring {:handler moves-server.core/app}

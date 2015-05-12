@@ -34,5 +34,5 @@
              wrap-keyword-params
              wrap-params))
 
-(defn start []
+(defn -main [& args]
   (jetty/run-jetty app {:port (or (env :port) 3333)}))

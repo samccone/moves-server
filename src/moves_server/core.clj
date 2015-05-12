@@ -1,11 +1,11 @@
 (ns moves-server.core
-  (:gen-class)
   (:require [ring.adapter.jetty :as jetty]
             [ring.middleware.keyword-params :refer [wrap-keyword-params]]
             [ring.middleware.params :refer [wrap-params]]
             [ring.middleware.resource :refer [wrap-resource]]
             [clj-http.client :as client]
-            [environ.core :refer [env]]))
+            [environ.core :refer [env]])
+  (:gen-class))
 
 (defn get-access-token [code]
   (let [client-id (env :client-id)

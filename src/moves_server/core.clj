@@ -36,4 +36,4 @@
              wrap-params))
 
 (defn -main [& args]
-  (jetty/run-jetty app {:port (or (env :port) 3333)}))
+  (jetty/run-jetty app {:port (Integer. (or (env :port) "3333"))}))

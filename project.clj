@@ -6,6 +6,7 @@
   :profiles {:uberjar {:aot :all}}
   :plugins [[lein-ring "0.8.11"]
             [lein-environ "1.0.0"]]
+  :min-lein-version "2.5.0"
   :ring {:handler moves-server.core/app}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [ring/ring-core "1.3.2"]

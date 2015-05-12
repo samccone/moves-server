@@ -1,4 +1,5 @@
 (ns moves-server.core
+  (:gen-class)
   (:require [ring.adapter.jetty :as jetty]
             [ring.middleware.keyword-params :refer [wrap-keyword-params]]
             [ring.middleware.params :refer [wrap-params]]
